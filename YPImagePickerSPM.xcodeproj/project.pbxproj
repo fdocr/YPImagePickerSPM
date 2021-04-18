@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		DC681462262CCE180036EF12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC681460262CCE180036EF12 /* LaunchScreen.storyboard */; };
 		DC68146D262CCE180036EF12 /* YPImagePickerSPMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC68146C262CCE180036EF12 /* YPImagePickerSPMTests.swift */; };
 		DC681478262CCE180036EF12 /* YPImagePickerSPMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC681477262CCE180036EF12 /* YPImagePickerSPMUITests.swift */; };
+		DC68148A262CCF180036EF12 /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = DC681489262CCF180036EF12 /* YPImagePicker */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC68148A262CCF180036EF12 /* YPImagePicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +146,9 @@
 			dependencies = (
 			);
 			name = YPImagePickerSPM;
+			packageProductDependencies = (
+				DC681489262CCF180036EF12 /* YPImagePicker */,
+			);
 			productName = YPImagePickerSPM;
 			productReference = DC681452262CCE150036EF12 /* YPImagePickerSPM.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = DC681449262CCE150036EF12;
+			packageReferences = (
+				DC681488262CCF180036EF12 /* XCRemoteSwiftPackageReference "YPImagePicker" */,
+			);
 			productRefGroup = DC681453262CCE150036EF12 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -593,6 +601,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC681488262CCF180036EF12 /* XCRemoteSwiftPackageReference "YPImagePicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fdoxyz/YPImagePicker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC681489262CCF180036EF12 /* YPImagePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC681488262CCF180036EF12 /* XCRemoteSwiftPackageReference "YPImagePicker" */;
+			productName = YPImagePicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DC68144A262CCE150036EF12 /* Project object */;
 }
